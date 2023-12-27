@@ -1,6 +1,8 @@
 ## How to prepare MSIX package manually.
 
-This repository contain my attempts to prepare the MSIX package for Microsoft Store.
+This repository contain my attempts to prepare the MSIX package for Microsoft Store:
+https://learn.microsoft.com/en-us/windows/msix/package/create-app-package-with-makeappx-tool
+
 
 ### What is MSIX package?
 
@@ -8,7 +10,12 @@ MSIX stands for Microsoft Windows app package format, which slowly replaces olde
 
 ## What is within this repository?
 
-The `AppxManifestSimplest.xml` corresponding to the following PowerShell script: 
+
+### The simplest example, just package
+
+`MakeAppx pack /v /d "C:\My Files" /p MyPackage.msix`
+
+The `AppxManifestSimplest.xml` corresponding to the following PowerShell script, which you can prepare: 
 
 ```PowerShell
 $MekaAppxLocation = "C:\Program Files (x86)\Windows Kits\10\App Certification Kit\"
@@ -23,6 +30,12 @@ Clear-Host
 
 **⚠ warning!** Rename `AppxManifestSimplest.xml` → `AppxManifest.xml` before running the above script. 
 **⚠ warning!** This script will prepare MSIX pachage which is not validated correctly by Microsoft Store. The main reason of that is too simple manifest file (`AppxManifest.xml`).
+
+
+### The useful example
+
+``MakeAppx pack /m "MyManifest.xml" /f MyMapping.txt  /p /o MyPackage.msix``
+
 
 ## How can I see a content of MSIX package without installing it?
 
