@@ -29,6 +29,7 @@ Clear-Host
 ```
 
 **⚠ warning!** Rename `AppxManifestSimplest.xml` → `AppxManifest.xml` before running the above script. 
+
 **⚠ warning!** This script will prepare MSIX pachage which is not validated correctly by Microsoft Store. The main reason of that is too simple manifest file (`AppxManifest.xml`).
 
 
