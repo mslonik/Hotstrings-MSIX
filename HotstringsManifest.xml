@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+
+<Identity
+	Name="Hotstrings"
+	ProcessorArchitecture = "x64"
+	Publisher="CN=DamIT"
+	Version="3.6.23.0" 
+/>
+
+  <Properties>
+	<DisplayName>Hotstrings</DisplayName>
+	<PublisherDisplayName>Damian Damaszke Dam IT</PublisherDisplayName>
+	<Description>Text replacement software application for Microsoft Windows. Short text entered by keyboard is automatically replaced into previously defined text(s) called hotstring(s).</Description>
+	<Logo>HotstringsLogo_100x100.png</Logo>
+  </Properties>
+
+<Resources>
+	<Resource Language="en-us" />
+</Resources>
+
+<Applications>
+    <Application Id="Hotstrings" >
+        <VisualElements> 
+            <DefaultTile ShowName="allLogos"/>
+            <SplashScreen BackgroundColor="white" Image="images\splash-sdk.png"/>
+        </VisualElements>
+    </Application>
+</Applications>
+
+<Dependencies>
+	<!-- https://www.anoopcnair.com/windows-10-build-numbers-version-numbers/ -->
+	<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19043.985" MaxVersionTested="10.0.19045.3693"/> <!-- https://www.anoopcnair.com/windows-10-build-numbers-version-numbers/ -->
+</Dependencies>  
+
+<!-- Add additional sections and settings as needed -->
+
+</Package>
+

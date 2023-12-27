@@ -41,3 +41,6 @@ Clear-Host
 
 Just open it by `7-zip` application.
 
+## From where to get information about min version and max version?
+
+https://www.anoopcnair.com/windows-10-build-numbers-version-numbers/
