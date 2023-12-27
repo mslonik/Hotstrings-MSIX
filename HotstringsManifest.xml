@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package
-	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+	xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+	>
 
 <Identity
 	Name="Hotstrings"
 	ProcessorArchitecture = "x64"
-	Publisher="CN=DamIT"
+	Publisher="CN=DamianDamaszkeDamIT, O=DamianDamaszkeDamIT, L=Gdańsk, S=pomorskie, C=Poland"
 	Version="3.6.23.0" 
 />
 
@@ -21,12 +23,20 @@
 </Resources>
 
 <Applications>
-    <Application Id="Hotstrings" >
-        <VisualElements> 
-            <DefaultTile ShowName="allLogos"/>
-            <SplashScreen BackgroundColor="white" Image="images\splash-sdk.png"/>
-        </VisualElements>
-    </Application>
+	<Application 
+		Id="Hotstrings"
+		EntryPoint="windows.fullTrustApplication"
+		Executable="Hotstrings.exe"
+	>
+		<uap:VisualElements 
+			DisplayName="Hotstrings"
+			Description="Text replacement software application for Microsoft Windows. Short text entered by keyboard is automatically replaced into previously defined text(s) called hotstring(s)."
+			BackgroundColor="#FFFFFF"               
+			Square150x150Logo="HotstringsLogo_100x100.png" 
+			Square44x44Logo="HotstringsLogo_100x100.png" 
+		>
+		</uap:VisualElements>
+	</Application>
 </Applications>
 
 <Dependencies>

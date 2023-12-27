@@ -34,7 +34,7 @@ Clear-Host
 
 ### The useful example
 
-``MakeAppx pack /m "MyManifest.xml" /f MyMapping.txt  /p /o MyPackage.msix``
+``MakeAppx pack /m "HotstringsManifest.xml" /f MyMapping.txt  /p /o HotstringsPackage.msix``
 
 
 ## How can I see a content of MSIX package without installing it?

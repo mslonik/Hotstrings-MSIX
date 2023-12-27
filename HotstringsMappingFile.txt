@@ -1,7 +1,0 @@
-[Files]
-"C:\Users\macie\AppData\Local\Hotstrings\Languages\English.txt"               						"Languages\English.txt"
-"c:\Users\macie\Documents\GitHub\Hotstrings-NSIS_installer\Libraries\AbbreviationsEnglish.csv"    	"Libraries\AbbreviationsEnglish.csv"
-"c:\Users\macie\Documents\GitHub\Hotstrings-NSIS_installer\Config.ini"  				            "Config.ini"
-"c:\Users\macie\Documents\GitHub\Hotstrings-NSIS_installer\HotstringsWebpage.url"               	"HotstringsWebpage.url"
-"c:\Users\macie\Documents\GitHub\Hotstrings-NSIS_installer\LICENSE_EULA.txt"                    	"LICENSE_EULA.txt"
-"c:\Users\macie\Documents\GitHub\Hotstrings_MSIX\HotstringsManifest.xml"							"AppxManifest.xml"
