@@ -1,1 +1,0 @@
-PS C:\Program Files (x86)\Windows Kits\10\App Certification Kit> ./MakeAppx pack /v /d "c:\Users\macie\Documents\GitHub\Hotstrings-MSIX\" /p "c:\Users\macie\Documents\GitHub\Hotstrings-MSIX\Hotstrings.msix"

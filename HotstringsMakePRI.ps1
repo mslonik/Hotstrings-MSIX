@@ -1,9 +1,9 @@
 # The purpose of this script is to experiment with Package Resource Index.
 
 $MakePRILocation = "c:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64"
-$InputDirectory  = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\InputDirectory\"
-$OutputDirectory = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\OutputDirectory"
-$PriConfigFolder = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\PriConfig\priconfig.xml" 
+$InputDirectory  = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\InputMSIX\"
+$OutputDirectory = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\PRIResources\"
+$PriConfigFolder = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\PRIConfig\priconfig.xml" 
 $ManifestFolder  = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\Manifest\AppxManifest.xml "
 
 Clear-Host
