@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package 
+	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
+	xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+	xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+	IgnorableNamespaces="uap uap10"
+	>
+
+<Identity 
+	Name="DamianDamaszkeDamIT.Hotstrings" 
+	ProcessorArchitecture="x64" 
+	Publisher="CN=BF86B7E7-0769-4883-B7F9-424280387563" 
+	Version="3.6.23.0" 
+	/>
+<Properties>
+	<DisplayName>Hotstrings</DisplayName>
+	<PublisherDisplayName>Damian Damaszke Dam IT</PublisherDisplayName>
+	<Description>Text replacement software application for Microsoft Windows. Short text entered by keyboard is automatically replaced into previously defined text(s) called hotstring(s).</Description>
+	<Logo>Assets\StoreLogo.png</Logo>
+    <uap10:PackageIntegrity>
+      <uap10:Content Enforcement="on" />
+    </uap10:PackageIntegrity>
+</Properties>
+
+<Resources>
+	<Resource Language="en-US" />
+    	<Resource uap:Scale="100" />
+    	<Resource uap:Scale="125" />
+    	<Resource uap:Scale="150" />
+    	<Resource uap:Scale="200" />
+    	<Resource uap:Scale="400" />
+</Resources>
+
+<Applications>
+	<Application 
+		Id="Hotstrings"
+		EntryPoint="windows.fullTrustApplication"
+		Executable="Hotstrings.exe"
+	>
+      <uap:VisualElements AppListEntry="default" BackgroundColor="transparent" Description="Advanced, configurable, text replacement tool written in AutoHotkey language." DisplayName="Hotstrings" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png">
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+        </uap:InitialRotationPreference>
+        <uap:DefaultTile Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png" Wide310x150Logo="Assets\Wide310x150Logo.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+	</Application>
+</Applications>
+
+<Dependencies>
+	<!-- https://www.anoopcnair.com/windows-10-build-numbers-version-numbers/ -->
+	<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19043.985" MaxVersionTested="10.0.19045.3693" />
+</Dependencies>  
+
+<!-- Add additional sections and settings as needed -->
+
+</Package>
