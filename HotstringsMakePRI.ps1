@@ -26,5 +26,6 @@ Clear-Host
 # /mn = manifest, 
 # /o = overwrite
 # /of = output folder, output location of PRI file
+# /mf = mapping file
 
-.$MakePRILocation\MakePri.exe new /cf $PriConfigFolder /pr $InputDirectory /mn $ManifestFolder /o /of $OutputDirectory
+.$MakePRILocation\MakePri.exe new /cf $PriConfigFolder /pr $InputDirectory /mn $ManifestFolder /o /of $OutputDirectory /mf appx
