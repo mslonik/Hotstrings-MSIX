@@ -4,7 +4,7 @@ $MakePRILocation = "c:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64"
 $InputDirectory  = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\InputMSIX\"
 $OutputDirectory = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\PRIResources\"
 $PriConfigFolder = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\PRIConfig\priconfig.xml" 
-$ManifestFolder  = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\Manifest\AppxManifest.xml "
+$ManifestFile  = "C:\Users\macie\Documents\GitHub\Hotstrings-MSIX\Manifest\AppxManifest.xml"
 
 Clear-Host
 
@@ -23,9 +23,9 @@ Clear-Host
 
 # /cf = configuration file output location
 # /pr = project files
-# /mn = manifest, 
+# /mn = manifest file, 
 # /o = overwrite
 # /of = output folder, output location of PRI file
 # /mf = mapping file
 
-.$MakePRILocation\MakePri.exe new /cf $PriConfigFolder /pr $InputDirectory /mn $ManifestFolder /o /of $OutputDirectory /mf appx
+.$MakePRILocation\MakePri.exe new /cf $PriConfigFolder /pr $InputDirectory /mn $ManifestFile /o /of $OutputDirectory /mf appx
